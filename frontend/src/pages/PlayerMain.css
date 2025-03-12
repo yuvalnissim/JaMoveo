@@ -1,0 +1,122 @@
+/* 🎵 עיצוב הקונטיינר הראשי */
+.player-container {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(26, 26, 26, 0.9);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* 🎶 אנימציית טעינה */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid #ffcc00;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 30px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🎤 כותרת העמוד */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* 🎼 תצוגת השיר */
+.live-song {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    padding: 15px;
+    border-radius: 8px;
+    background: #222;
+    margin-top: 15px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 🎼 קונטיינר לתנועת השורות */
+.song-scroll {
+    overflow: hidden;
+    height: 100px;
+}
+
+/* 📝 שם השיר */
+.song-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* 🎸 תצוגת האקורדים והמילים */
+.song-line {
+    text-align: center;
+    font-size: 1.3rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 🎸 אקורדים (רק לנגנים) */
+.chords {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00aaff;
+    margin-bottom: 5px;
+}
+
+/* 🎤 מילים לשיר */
+.lyrics {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* ⏳ הודעה כשאין שיר נבחר */
+.waiting-text {
+    font-size: 1.3rem;
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+/* 🎭 אפקט הופעה הדרגתי */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔽 כפתור גלילה */
+.scroll-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ffcc00;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scroll-button:hover {
+    background: #ffdd44;
+}

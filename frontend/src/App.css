@@ -1,0 +1,135 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 🎨 רקע עם גרדיאנט יוקרתי */
+body {
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🏠 תפריט ניווט מקצועי */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 📝 טופס מעוצב עם אפקט Glassmorphism */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 🔘 שדות הקלט */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+  outline: none;
+}
+
+/* 🚀 כפתור עם אנימציות יוקרתיות */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #ffcc00, #ff9900);
+  border: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff9900, #ffcc00);
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* ✨ אפקטי אנימציה */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}

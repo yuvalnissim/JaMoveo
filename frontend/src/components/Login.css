@@ -1,0 +1,62 @@
+/* 🎸 קונטיינר ראשי של עמוד ההתחברות */
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    text-align: center;
+}
+
+/* 🔥 כותרת ההתחברות */
+.login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* 📝 טופס ההתחברות */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ✏️ שדות קלט */
+.login-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+/* 🔘 כפתור התחברות */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #ffdd44;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}

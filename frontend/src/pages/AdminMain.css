@@ -1,0 +1,55 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+li:hover {
+    background-color: #f5f5f5;
+}
+input, button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.player-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.live-song {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.scroll-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scroll-button:hover {
+    background: #ffdd44;
+}
+
