@@ -9,12 +9,22 @@ require('dotenv').config();
 
 const app = express();
 const server = http.createServer(app);
+/*
 const io = new Server(server, {
     cors: {
         origin: "http://localhost:5173", // כתובת ה-Frontend
         methods: ["GET", "POST"]
     }
 });
+*/
+
+const io = new Server(server, {
+    cors: {
+        origin: "https://voluble-pudding-44874c.netlify.app", // הכתובת המעודכנת של ה-Frontend
+        methods: ["GET", "POST"]
+    }
+});
+
 
 // Middleware
 app.use(cors());
