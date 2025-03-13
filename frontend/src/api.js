@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "mongodb+srv://yuvalnissim:<db_password>@cluster0.sygao8c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const API_URL = "jamoveo-production-d468.up.railway.app";
 
 // ✅ רישום משתמש (כולל isAdmin)
 export async function registerUser(userData) {
