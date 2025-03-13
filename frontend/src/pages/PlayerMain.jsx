@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
-import "./PlayerMain.css"; // קובץ העיצוב
+import "./PlayerMain.css"; 
 
-const socket = io("http://localhost:5001");
+const socket = io("https://jamoveo-production-d468.up.railway.app");
 
 const PlayerMain = () => {
     const [currentSong, setCurrentSong] = useState(null);
