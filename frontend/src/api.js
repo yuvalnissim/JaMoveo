@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "jamoveo-production-d468.up.railway.app";
+const API_URL = "https://jamoveo-production-d468.up.railway.app";
+
 
 // ✅ רישום משתמש (כולל isAdmin)
 export async function registerUser(userData) {
